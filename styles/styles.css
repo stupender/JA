@@ -1,25 +1,197 @@
 body {
   font-family: 'Work Sans', sans-serif;
+  background-color: #F4F5F2;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+nav {
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #F4F5F2;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/* accordions! */
+/* HOME */
+#home {
+  margin-bottom: 200px;
+}
+a {
+  color: #05A7B9;
+  text-decoration: none;
+}
+
+a.menu {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  color: #0A3845;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+a:hover {
+  color: #05A7B9;
+
+}
+img#main {
+  width: 40%;
+  margin-top: 15%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+h1 {
+  color: #0A3845;
+  font-size: 32px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+h3 {
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  color: #0A3845;
+  font-weight: 300;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+/* MUSIC */
+
+#music {
+  /* margin-top: 25%; */
+  /* background-color: #F2CAAC; */
+  margin-bottom: 100px;
+}
+h2 {
+  color: #0A3845;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 20%;
+}
+h2.musicheader {
+  padding-bottom: 10%;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+background-color: #F4F5F2;
+color: #444;
+cursor: pointer;
+padding: 18px;
+font-weight: 700;
+width: 100%;
+text-align: center;
+font-size: 12px;
+border: none;
+outline: none;
+transition: 0.4s;
 }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #ccc;
+background-color: #ccc;
 }
+
+/* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+padding: 0 18px;
+background-color: #F4F5F2;
+display: none;
+overflow: hidden;
+}
+
+.panel {
+padding: 0 18px;
+margin: 0;
+border: 0;
+background-color: #F4F5F2;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* ABOUT */
+
+p {
+  font-size: 16px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  line-height: 165%;
+  color: #0A3845;
+}
+/*
+#about {
+  background-color: #7D7D7D;
+} */
+#biopic {
+  width: 70%;
+  /* margin-top: 10%; */
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.sig {
+  /* text-align: center; */
+  /* margin-bottom: 3%; */
+  vertical-align: bottom;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  margin-top: 10%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 450px) {
+  a.menu {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  img#main {
+    margin-top: 30%;
+  }
+  p {
+    padding-top: 20%;
+  }
+}
+
+/* @media (max-width: 550px) {
+  h2 {
+    padding-bottom: 5%;
+  }
+} */
+
+@media (min-width: 1200px){
+  img#main {
+    width: 40%;
+    margin-top: 7%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  h2 {
+    padding-top: 10%;
+  }
 }
