@@ -37,7 +37,6 @@ a.menu {
 }
 a:hover {
   color: #05A7B9;
-
 }
 img#main {
   width: 40%;
@@ -96,6 +95,10 @@ outline: none;
 transition: 0.4s;
 }
 
+button:hover {
+  color: #05A7B9;
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
 background-color: #ccc;
@@ -130,6 +133,7 @@ transition: max-height 0.2s ease-out;
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
 
 /* ABOUT */
 
